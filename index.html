@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Michelle Aspiazu - Desarrolladora Full Stack. Soluciones web modernas, APIs REST, Bases de datos y dashboards de Power BI.">
+  <meta name="keywords" content="Michelle Aspiazu, Full Stack Developer, Desarrollador Web, React, Node.js, Power BI, HTML, CSS, JavaScript, Portafolio">
+  <meta name="author" content="Michelle Aspiazu">
+  
+  <!-- SEO Open Graph -->
+  <meta property="og:title" content="Michelle Aspiazu | Desarrolladora Full Stack">
+  <meta property="og:description" content="Diseño y desarrollo web premium, aplicaciones interactivas, bases de datos y soluciones de análisis de datos con Power BI.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/profile.png">
+  
+  <title>Michelle Aspiazu — Desarrolladora Junior</title>
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Background Floating Shapes -->
+  <div class="bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+  </div>
+
+  <!-- 1. NAVBAR FIJA -->
+  <header class="navbar" id="main-navbar">
+    <div class="container">
+      <a href="#inicio" class="logo" id="nav-logo">
+        Michelle Aspiazu<span></span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+       
+        <!-- CTA button inside menu for mobile drawer -->
+        <a href="assets/CV_Michelle_Aspiazu.pdf" class="btn btn-primary btn-cv-mobile btn-cv" style="display: none;" download>
+          <i class="fa-solid fa-download"></i> Descargar CV
+        </a>
+      </nav>
+      
+      <a href="assets/CV_Michelle_Aspiazu.pdf" class="btn btn-secondary btn-cv" id="nav-cv-btn" download>
+        <i class="fa-solid fa-download"></i> Descargar CV
+      </a>
+      
+      <button class="hamburger" id="menu-toggle" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal-element reveal-left">
+            <div class="availability-badge" id="hero-badge">
+              <span class="pulse-dot"></span> Disponible para nuevos proyectos
+            </div>
+            <span class="hero-subtitle">Hola, soy Michelle Aspiazu</span>
+            <h1 class="hero-title text-gradient">
+              Desarrolladora de Software
+              <span class="text-gradient-purple">Junior</span>
+            </h1>
+        
+            <div class="hero-buttons">
+              <a href="#proyectos" class="btn btn-primary" id="hero-projects-btn">
+                Ver Proyectos <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="assets/CV_Michelle_Aspiazu.pdf" class="btn btn-secondary" id="hero-cv-btn" download>
+                Descargar CV <i class="fa-solid fa-download"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-image-wrapper reveal-element reveal-right">
+            <!-- Floating badge -->
+            <div class="floating-stat-badge">
+              <div class="badge-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="badge-text">
+                <h4 id="hero-badge-count">10+</h4>
+                <p>Proyectos Finalizados</p>
+              </div>
+            </div>
+            
+            <div class="hero-circle-bg"></div>
+            <div class="hero-shapes-decorative">
+              <div class="ring-large"></div>
+              <div class="ring-dashed"></div>
+              <div class="yellow-circle"></div>
+              <div class="white-triangle"><i class="fa-solid fa-triangle-exclamation" style="transform: rotate(45deg); font-size: 1.2rem;"></i></div>
+              <div class="floating-circle-outline"></div>
+            </div>
+            
+            <div class="portrait-container">
+              <div class="portrait-image-mask">
+                <img src="img/profile.png" alt="Michelle Aspiazu — Full Stack Developer" id="hero-portrait-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Explorar</span>
+        <div class="mouse-wheel">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SOBRE MÍ -->
+    <section class="section-padding" id="sobre-mi">
+      <div class="container">
+        <div class="section-header reveal-element reveal-up">
+          <span class="section-subtitle">Conóceme</span>
+          <h2 class="section-title">Sobre <span>Mí</span></h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-image reveal-element reveal-left">
+            <div class="about-image-inner">
+              <img src="img/about_illustration.png" alt="Ilustración abstracta de desarrollo Full Stack y datos" id="about-portrait-img">
+            </div>
+            <!-- Extra info summaries overlapping the image -->
+            <div class="about-info-summary">
+              <div class="summary-item">
+                <h4>+1</h4>
+                <p>Años Experiencia</p>
+              </div>
+              <div class="summary-item" style="border-left: 1px solid var(--border-glass); border-right: 1px solid var(--border-glass); padding: 0 15px;">
+                <h4>10+</h4>
+                <p>Proyectos</p>
+              </div>
+              <div class="summary-item">
+                <h4>100%</h4>
+                <p>Compromiso</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-content reveal-element reveal-right">
+            <h3>Diseñando y desarrollando el futuro web</h3>
+            <p class="about-bio">
+              Experiencia en programación orientada a objetos, diseño de
+interfaces gráficas, desarrollo web y móvil, así como en gestión de
+bases de datos. Capacidad para trabajar en equipo, resolver
+problemas técnicos y adaptarse a nuevas tecnologías. En constante
+aprendizaje y actualización en herramientas modernas de desarrollo.
+            </p>
+            
+            <div class="about-info-grid">
+              <div class="info-item">
+                <i class="fa-solid fa-calendar-days"></i>
+                <div class="info-text">
+                  <span class="info-label">Edad</span>
+                  <span class="info-value">29 Años</span>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="info-text">
+                  <span class="info-label">Ciudad</span>
+                  <span class="info-value">Guayaquil, Ecuador</span>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="info-text">
+                  <span class="info-label">Universidad</span>
+                  <span class="info-value">Universidad de Guayaquil</span>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-code"></i>
+                <div class="info-text">
+                  <span class="info-label">Carrera</span>
+                  <span class="info-value">Tecnologías de la Información</span>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="info-text">
+                  <span class="info-label">Email</span>
+                  <a href="mailto:michellenico1996@gmail.com" class="info-value">michellenico1996@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-brands fa-github"></i>
+                <div class="info-text">
+                  <span class="info-label">GitHub</span>
+                  <a href="https://github.com/michnico2696-cmd" target="_blank" class="info-value">github.com/michnico2696-cmd</a>
+                </div>
+              </div>
+              
+              <div class="info-item" style="grid-column: span 2;">
+                <i class="fa-brands fa-linkedin"></i>
+                <div class="info-text">
+                  <span class="info-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/michelle-aspiazu-b14759253?trk=contact-info" target="_blank" class="info-value">linkedin.com/in/michelle-aspiazu-b14759253?trk=contact-info</a>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#contacto" class="btn btn-primary" id="about-contact-btn">
+              Hablemos <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HABILIDADES -->
+    <section class="section-padding" id="habilidades" style="background: var(--bg-dark-secondary);">
+      <div class="container">
+        <div class="section-header reveal-element reveal-up">
+          <span class="section-subtitle">Conocimientos Técnicos</span>
+          <h2 class="section-title">Mis <span>Habilidades</span></h2>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- HTML -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-html5"></i>
+                <span class="skill-title">HTML5</span>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="95"></div>
+            </div>
+          </div>
+          
+          <!-- CSS -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span class="skill-title">CSS3</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="90"></div>
+            </div>
+          </div>
+          
+          <!-- JS -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-js"></i>
+                <span class="skill-title">JavaScript</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="85"></div>
+            </div>
+          </div>
+          
+          <!-- React -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-300">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-react"></i>
+                <span class="skill-title">React</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="80"></div>
+            </div>
+          </div>
+          
+          <!-- Node.js -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-node-js"></i>
+                <span class="skill-title">Node.js</span>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="75"></div>
+            </div>
+          </div>
+          
+          <!-- Express -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-solid fa-server"></i>
+                <span class="skill-title">Express.js</span>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="75"></div>
+            </div>
+          </div>
+          
+          <!-- MySQL -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-solid fa-database"></i>
+                <span class="skill-title">MySQL</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="80"></div>
+            </div>
+          </div>
+          
+          <!-- Git -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-300">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-git-alt"></i>
+                <span class="skill-title">Git</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="85"></div>
+            </div>
+          </div>
+          
+          <!-- GitHub -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-github"></i>
+                <span class="skill-title">GitHub</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="85"></div>
+            </div>
+          </div>
+          
+          <!-- Power BI -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-solid fa-chart-column"></i>
+                <span class="skill-title">Power BI</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="85"></div>
+            </div>
+          </div>
+          
+          <!-- Angular -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-brands fa-angular"></i>
+                <span class="skill-title">Angular</span>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="75"></div>
+            </div>
+          </div>
+          
+          <!-- .NET -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-300">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-solid fa-code dotnet-icon"></i>
+                <span class="skill-title">.NET</span>
+              </div>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="70"></div>
+            </div>
+          </div>
+          
+          <!-- SQL Server -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-solid fa-database sql-server-icon"></i>
+                <span class="skill-title">SQL Server</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="80"></div>
+            </div>
+          </div>
+          
+          <!-- Oracle SQL -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-solid fa-database oracle-icon"></i>
+                <span class="skill-title">Oracle SQL</span>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="75"></div>
+            </div>
+          </div>
+          
+          <!-- PostgreSQL -->
+          <div class="skill-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="skill-header">
+              <div class="skill-name-wrapper">
+                <i class="fa-solid fa-database postgres-icon"></i>
+                <span class="skill-title">PostgreSQL</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-fill" data-progress="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SERVICIOS -->
+    <section class="section-padding" id="servicios">
+      <div class="container">
+        <div class="section-header reveal-element reveal-up">
+          <span class="section-subtitle">Qué Ofrezco</span>
+          <h2 class="section-title">Mis <span>Servicios</span></h2>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Servicio 1: Desarrollo Web -->
+          <div class="service-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Desarrollo Web</h3>
+            <p>Construcción de sitios y plataformas a medida totalmente responsivos, utilizando estándares modernos de HTML5, CSS3 y JavaScript. Interfaces optimizadas para una experiencia fluida en cualquier dispositivo.</p>
+          </div>
+          
+          <!-- Servicio 2: Aplicaciones Móviles -->
+          <div class="service-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Aplicaciones Móviles</h3>
+            <p>Diseño y desarrollo frontend para aplicaciones móviles, proporcionando componentes interactivos, transiciones suaves y layouts adaptables basados en prototipos interactivos.</p>
+          </div>
+          
+          <!-- Servicio 3: Backend -->
+          <div class="service-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3>Backend</h3>
+            <p>Programación y estructuración de la lógica del servidor de tus aplicaciones utilizando Node.js y Express.js, asegurando escalabilidad, respuestas rápidas y seguridad en el manejo de los datos de negocio.</p>
+          </div>
+          
+          <!-- Servicio 4: Bases de Datos -->
+          <div class="service-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>Bases de Datos</h3>
+            <p>Diseño de modelos relacionales eficaces, escritura de consultas complejas y optimización de bases de datos relacionales. Integración completa y segura de datos.</p>
+          </div>
+          
+          <!-- Servicio 5: Dashboards Power BI -->
+          <div class="service-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <h3>Dashboards Power BI</h3>
+            <p>Modelado de datos corporativos, diseño de métricas clave (DAX) y creación de cuadros de mando e informes interactivos. Transformar información cruda en decisiones de negocio estratégicas.</p>
+          </div>
+          
+          <!-- Servicio 6: APIs REST -->
+          <div class="service-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3>APIs REST</h3>
+            <p>Desarrollo y consumo de APIs robustas para comunicar servicios de manera ágil..</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ESTADÍSTICAS -->
+    <section class="stats-section" style="background: var(--bg-dark-secondary);">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-item glass-panel reveal-element reveal-up">
+            <span class="stat-number text-gradient-purple" data-target="10" data-suffix="+">0+</span>
+            <span class="stat-label">Proyectos</span>
+          </div>
+          <!-- Stat 2 -->
+          <div class="stat-item glass-panel reveal-element reveal-up reveal-delay-100">
+            <span class="stat-number text-gradient-purple" data-target="2" data-suffix="+">0+</span>
+            <span class="stat-label">Años aprendiendo</span>
+          </div>
+          <!-- Stat 3 -->
+          <div class="stat-item glass-panel reveal-element reveal-up reveal-delay-200">
+            <span class="stat-number text-gradient-purple" data-target="100" data-suffix="%">0%</span>
+            <span class="stat-label">Compromiso</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PROYECTOS -->
+    <section class="section-padding" id="proyectos">
+      <div class="container">
+        <div class="section-header reveal-element reveal-up">
+          <span class="section-subtitle">Mi portafolio</span>
+          <h2 class="section-title">Trabajos <span>Recientes</span></h2>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Proyecto 1: Prototipo TransAspiazu -->
+          <div class="project-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="project-img-wrapper">
+              <img src="assets/reactInicio.png" alt="Captura Tienda Online React">
+              
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <h3 class="project-title">Prototipo TransAspiazu S.A.</h3>
+              <p class="project-desc">Plataforma web y móvil desarrollada para mejorar la gestión y el control de los viajes realizados por los transportistas. El sistema permite el registro y seguimiento de rutas, administración de usuarios, consulta del historial de viajes y visualización de información en tiempo real. Además, incorpora autenticación de usuarios, gestión de bitácoras, carga de evidencias fotográficas y un panel administrativo.</p>
+            
+            </div>
+          </div>
+          
+          <!-- Proyecto 2: Dashboard tienda de ropa -->
+          <div class="project-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="project-img-wrapper">
+              <img src="assets/tiendaRopa.png" alt="Dashboard Power BI Ventas">
+             
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Angular</span>
+                <span class="project-tag">.NET</span>
+                <span class="project-tag">PostgreSQL</span>
+              </div>
+              <h3 class="project-title">Prototipo de tienda de ropa</h3>
+              <p class="project-desc">Aplicación web para la administración de una tienda de ropa, desarrollada con Angular, .NET y PostgreSQL. Cuenta con autenticación de usuarios, gestión de productos, catálogo e interfaz moderna y responsiva.</p>
+          
+            </div>
+          </div>
+          
+          <!-- Proyecto 3: Gestor de Tareas -->
+          <div class="project-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="project-img-wrapper">
+              <img src="assets/reinaNet.png" alt="Gestor de Tareas">
+             
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">.NET</span>
+                <span class="project-tag">SQL Server</span>
+              </div>
+              <h3 class="project-title">Sistema de votación Reina</h3>
+              <p class="project-desc">Sistema de votación desarrollado en .NET con arquitectura en capas (Datos, Negocio y Presentación) y base de datos SQL Server. Permite gestionar el registro de participantes, realizar votaciones y administrar la información de manera organizada mediante una interfaz de escritorio.</p>
+             
+            </div>
+          </div>
+          
+          <!-- Proyecto 4: Landing Page Premium -->
+          <div class="project-card glass-panel glass-panel-hover reveal-element reveal-up">
+            <div class="project-img-wrapper">
+              <img src="assets/CelularesNet.png" alt="Landing Page">
+            
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+               <span class="project-tag">.NET</span>
+               <span class="project-tag">SQL Server</span>
+              </div>
+              <h3 class="project-title">Sistema de Catálogo de Celulares</h3>
+              <p class="project-desc">Sistema de escritorio para la gestión de un catálogo de celulares, desarrollado en .NET (C#) con SQL Server. Implementado mediante una arquitectura modular con proyectos independientes para clientes, proveedores, transporte, productos, ventas y demás módulos administrativos, facilitando una organización escalable y el mantenimiento del sistema.</p>
+            
+            </div>
+          </div>
+          
+          <!-- Proyecto 5 -->
+          <div class="project-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-100">
+            <div class="project-img-wrapper">
+              <img src="assets/viajeJava.png" alt="API REST Escolar">
+            
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">JAVA</span>
+                <span class="project-tag">PostgreSQL</span>
+              </div>
+              <h3 class="project-title">Sistema de gestión para una agencia de viajes</h3>
+              <p class="project-desc">Sistema de gestión para una agencia de viajes desarrollado en Java con PostgreSQL. Implementado con arquitectura en capas (Datos, Negocio y Presentación), organizado en paquetes para facilitar el mantenimiento del código. Incluye operaciones CRUD para la administración de clientes, destinos, reservas y servicios.</p>
+            
+            </div>
+          </div>
+          
+          <!-- Proyecto 6: App de Reservas -->
+          <div class="project-card glass-panel glass-panel-hover reveal-element reveal-up reveal-delay-200">
+            <div class="project-img-wrapper">
+              <img src="assets/reservaJava.png" alt="App de Reservas">
+             
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">JAVA</span>
+                <span class="project-tag">Oracle SQL Developer</span>
+              </div>
+              <h3 class="project-title">Sistema de alojamientos tipo Airbnb</h3>
+              <p class="project-desc">Sistema de gestión de alojamientos tipo Airbnb desarrollado en Java con Oracle SQL. Implementado mediante una arquitectura en capas (Datos, Negocio y Presentación) y organizado por paquetes para mantener un código estructurado. Incluye operaciones CRUD para la administración de usuarios, alojamientos, reservas y servicios.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#inicio" class="footer-logo">
+          Michelle Aspiazu<span></span>
+        </a>
+        
+        <p class="footer-copyright">
+          &copy; <span id="year">2026</span> Michelle Aspiazu. Todos los derechos reservados.
+        </p>
+        
+        <div class="footer-socials">
+          <a href="https://github.com/MichelleAspiazu" target="_blank" class="social-circle-link" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/michelle-aspiazu-b14759253" target="_blank" class="social-circle-link" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
