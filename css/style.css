@@ -919,6 +919,7 @@ body.hovered-link .cursor-outline {
 .skill-name-wrapper i.oracle-icon { color: #F00000; -webkit-text-fill-color: initial; }
 .skill-name-wrapper i.dotnet-icon { color: #512BD4; -webkit-text-fill-color: initial; }
 .skill-name-wrapper i.postgres-icon { color: #336791; -webkit-text-fill-color: initial; }
+.skill-name-wrapper i.fa-wordpress { color: #21759B; -webkit-text-fill-color: initial; }
 
 .skill-title {
   font-family: var(--font-title);
